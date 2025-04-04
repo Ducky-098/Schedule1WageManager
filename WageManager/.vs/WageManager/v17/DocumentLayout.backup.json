@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Modding\\Schedule1\\Schedule1WageManager\\WageManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{63796D77-8C24-492F-AA5D-1F1AD66C2571}|WageManager.csproj|d:\\modding\\schedule1\\schedule1wagemanager\\wagemanager\\core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63796D77-8C24-492F-AA5D-1F1AD66C2571}|WageManager.csproj|solutionrelative:core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Core.cs",
+              "DocumentMoniker": "D:\\Modding\\Schedule1\\Schedule1WageManager\\WageManager\\Core.cs",
+              "RelativeDocumentMoniker": "Core.cs",
+              "ToolTip": "D:\\Modding\\Schedule1\\Schedule1WageManager\\WageManager\\Core.cs",
+              "RelativeToolTip": "Core.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T14:26:21.37Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

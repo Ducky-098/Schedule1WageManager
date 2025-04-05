@@ -30,10 +30,6 @@ namespace WageManager
             LoggerInstance.Msg("WageManager Initialized.");
         }
 
-        public override void OnSceneWasInitialized(int buildIndex, string sceneName)
-        {
-            GetWorkerWages();
-        }
         public override void OnUpdate()
         {
             bool isPhoneOpen = Phone.Instance.IsOpen;

@@ -1,5 +1,6 @@
 ﻿using Il2CppScheduleOne.Money;
 using Il2CppScheduleOne.Property;
+using Il2CppScheduleOne.UI.Phone;
 using MelonLoader;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -16,13 +17,13 @@ namespace WageManager
         private float _barnCosts;
         private float _sweatshopCosts;
 
-        // Using const strings for property codes
         private const string Bungalow = "bungalow";
         private const string DocksWarehouse = "dockswarehouse";
         private const string Barn = "barn";
         private const string Sweatshop = "sweatshop";
         private bool _showMenu = false;
         private Rect _menuRect = new Rect(20, 20, 250, 300);
+        private bool _wasPhoneOpen;
 
         public override void OnInitializeMelon()
         {
@@ -35,11 +36,16 @@ namespace WageManager
         }
         public override void OnUpdate()
         {
-            if (Keyboard.current.tabKey.wasPressedThisFrame)
+            bool isPhoneOpen = Phone.Instance.IsOpen;
+            if (isPhoneOpen != _wasPhoneOpen)
             {
-                GetWorkerWages();
+                if (isPhoneOpen)
+                {
+                    GetWorkerWages();
+                }
                 _showMenu = !_showMenu;
             }
+            _wasPhoneOpen = isPhoneOpen;
         }
 
         public override void OnGUI()

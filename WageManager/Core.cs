@@ -1,9 +1,8 @@
-﻿using Il2CppScheduleOne.Money;
+using Il2CppScheduleOne.Money;
 using Il2CppScheduleOne.Property;
 using Il2CppScheduleOne.UI.Phone;
 using MelonLoader;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 [assembly: MelonInfo(typeof(WageManager.Core), "WageManager", "1.0.0", "raequ", null)]
 [assembly: MelonGame("TVGS", "Schedule I")]
@@ -12,18 +11,25 @@ namespace WageManager
 {
     public class Core : MelonMod
     {
+        #region WageCosts
         private float _bungalowCosts;
         private float _docksCosts;
         private float _barnCosts;
         private float _sweatshopCosts;
+        #endregion
 
+        #region PropertyCodes
         private const string Bungalow = "bungalow";
         private const string DocksWarehouse = "dockswarehouse";
         private const string Barn = "barn";
         private const string Sweatshop = "sweatshop";
+        #endregion
+
+        #region GUIFields
         private bool _showMenu = false;
         private Rect _menuRect = new Rect(20, 20, 250, 300);
         private bool _wasPhoneOpen;
+        #endregion
 
         public override void OnInitializeMelon()
         {
